@@ -1,0 +1,4 @@
+src/assets/*
+src/*.d.ts
+/*.js
+/*.cjs

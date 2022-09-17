@@ -1,0 +1,49 @@
+{
+  "name": "language-learning",
+  "private": true,
+  "version": "0.0.1-beta.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "commit": "git add . && git status && git-cz",
+    "lint": "eslint src --ext .ts --ext .vue --fix",
+    "prepare": "husky install",
+    "release": "gulp && npm run build"
+  },
+  "dependencies": {
+    "@vitejs/plugin-vue": "^3.1.0",
+    "ant-design-vue": "^3.2.12",
+    "cal-rule": "^0.4.1",
+    "less": "^4.1.3",
+    "typescript": "^4.8.3",
+    "unplugin-auto-import": "^0.11.2",
+    "unplugin-vue-components": "^0.22.7",
+    "vant": "^3.6.2",
+    "vite": "^3.1.1",
+    "vite-plugin-svg-icons": "^2.0.1",
+    "vue": "^3.2.39",
+    "vue-router": "^4.1.5",
+    "vue-tsc": "^0.40.13"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
+    "@typescript-eslint/eslint-plugin": "^5.37.0",
+    "@typescript-eslint/parser": "^5.37.0",
+    "chalk": "^5.0.1",
+    "eslint": "^8.23.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^9.4.0",
+    "fs-extra": "^10.1.0",
+    "git-cz": "^4.9.0",
+    "gulp": "^4.0.2",
+    "husky": "^8.0.0",
+    "inquirer": "^9.1.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "2.7.1",
+    "vue-eslint-parser": "^9.1.0"
+  }
+}

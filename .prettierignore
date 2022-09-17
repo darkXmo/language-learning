@@ -1,0 +1,6 @@
+# Ignore artifacts:
+build
+dist
+src/assets/*.js
+src/*.d.ts
+coverage
