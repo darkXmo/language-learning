@@ -1,12 +1,4 @@
 {
-  "tabWidth": 2,
-  "useTabs": false,
-  "semi": true,
-  "singleQuote": true,
-  "trailingComma": "none",
-  "singleAttributePerLine": true,
-  "bracketSameLine": true,
-  "endOfLine": "auto",
   "overrides": [
     {
       "files": "version-config.ts",
@@ -15,6 +7,12 @@
         "trailingComma": "none",
         "semi": false,
         "quoteProps": "preserve"
+      }
+    },
+    {
+      "files": "*.html",
+      "options": {
+        "parser": "html"
       }
     }
   ]

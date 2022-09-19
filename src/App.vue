@@ -5,7 +5,7 @@
 <script setup lang="ts"></script>
 
 <style>
-@import url('./assets/style/global.less');
+@import url("./assets/style/global.less");
 #app {
   box-sizing: border-box;
 }

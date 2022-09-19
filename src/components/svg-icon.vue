@@ -12,20 +12,15 @@ const props = defineProps<{
   width?: string;
   size?: string;
 }>();
-const svgColor = toRef(props, 'color');
+const svgColor = toRef(props, "color");
 const symbolId = computed(() => `#${props.prefix}-${props.name}`);
-const width = props.width ?? props.size ?? '24px';
-const height = props.height ?? props.size ?? '24px';
+const width = props.width ?? props.size ?? "24px";
+const height = props.height ?? props.size ?? "24px";
 </script>
 
 <template>
-  <svg
-    aria-hidden="true"
-    :width="width"
-    :height="height">
-    <use
-      :href="symbolId"
-      :fill="svgColor" />
+  <svg aria-hidden="true" :width="width" :height="height">
+    <use :href="symbolId" :fill="svgColor" />
   </svg>
 </template>
 

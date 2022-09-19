@@ -10,7 +10,8 @@
     "commit": "git add . && git status && git-cz",
     "lint": "eslint src --ext .ts --ext .vue --fix",
     "prepare": "husky install",
-    "release": "gulp && npm run build"
+    "release": "gulp && npm run build",
+    "version": "gulp customizeVersion"
   },
   "dependencies": {
     "@vitejs/plugin-vue": "^3.1.0",
@@ -30,6 +31,9 @@
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
+    "@types/fs-extra": "^9.0.13",
+    "@types/inquirer": "^9.0.1",
+    "@types/prettier": "^2.7.0",
     "@typescript-eslint/eslint-plugin": "^5.37.0",
     "@typescript-eslint/parser": "^5.37.0",
     "chalk": "^5.0.1",
